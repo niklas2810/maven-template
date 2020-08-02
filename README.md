@@ -24,8 +24,8 @@ or configurations, feel free to adjust the repo to your needs!
 
 Based on [github/renaming](https://github.com/github/renaming), the **default branch** is called `main`.
 All development activity should be committed into the `development` branch. All other branches
-(e.g. feature/ and bug/ branches) should be pulled into `development` branch, which can be pulled
-into `main`. Please keep in mind that the branch name is hardcoded in all [actions](.github/workflows)!
+(e.g. _feature/_ and _bug/\*_) should be pulled into the `development` branch, which again can be merged
+into `main` when needed. Please keep in mind that the branch name is hardcoded in all [actions](.github/workflows)!
 
 **Feature overview:**
 
