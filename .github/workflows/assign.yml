@@ -1,0 +1,20 @@
+# https://github.com/srggrs/assign-one-project-github-action
+name: Assign Issues and Pull Requests
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  assign-project:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🤖 Assign to project
+        uses: srggrs/assign-one-project-github-action@1.2.0
+        with:
+          project: 'https://github.com/niklas2810/maven-template/projects/1'
