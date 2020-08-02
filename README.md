@@ -20,8 +20,8 @@ basic features I need for nearly every project I do in Java.
 
 **Feature overview:**
 
-- Automated unit tests ([GitHub Actions](.github/actions/testing.yml))
-- Automated code coverage ([GitHub Actions](.github/actions/coverage.yml))
+- Automated unit tests ([GitHub Actions](.github/workflows/testing.yml))
+- Automated code coverage ([GitHub Actions](.github/workflows/coverage.yml))
     - Automated upload to Code Climate
     - Automated deployment to GitHub Pages
         - HTML formatting via [tidy](http://www.html-tidy.org/)
