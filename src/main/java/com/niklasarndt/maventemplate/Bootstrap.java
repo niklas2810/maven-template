@@ -20,7 +20,8 @@ public class Bootstrap {
         if (System.getenv("SENTRY_DSN") != null || System.getProperty("sentry.dsn") != null) {
 
             Sentry.init();
-            logger.debug("Did Sentry initialize properly? {}", Sentry.isInitialized() ? "Yes" : "No");
+            logger.debug("Did Sentry initialize properly? {}",
+                    Sentry.isInitialized() ? "Yes" : "No");
         } else {
             logger.info("Specify your DSN via SENTRY_DSN to enable Sentry logging. You can " +
                     "find it at https://sentry.io/settings/<org>/projects/<project>/keys.");
