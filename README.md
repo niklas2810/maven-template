@@ -2,15 +2,14 @@
     <h1>Maven Template</h1>
     <br>
     <a href="https://codeclimate.com/github/niklas2810/maven-template/maintainability">
-        <img alt="codeclimate maintainability" src="https://img.shields.io/codeclimate/maintainability/niklas2810/maven-template?logo=Code%20Climate&style=for-the-badge"/></a>
+        <img alt="codeclimate maintainability" src="https://api.codeclimate.com/v1/badges/32b02cdb535c901f3280/maintainability" />
+    </a>
     <a href="https://codeclimate.com/github/niklas2810/maven-template/test_coverage">
-        <img alt="codeclimate test coverage" src="https://img.shields.io/codeclimate/coverage/niklas2810/maven-template?logo=Code%20Climate&style=for-the-badge"/></a>
+        <img alt="codeclimate test coverage" src="https://api.codeclimate.com/v1/badges/32b02cdb535c901f3280/test_coverage" />
+    </a>
     <br>
-    <a href="https://codeclimate.com/github/niklas2810/maven-template/issues">
-        <img alt="codeclimate issues" src="https://img.shields.io/codeclimate/issues/niklas2810/maven-template?logo=Code%20Climate&style=for-the-badge"/>
-    </a>    
     <a href="https://github.com/niklas2810/maven-template/actions?query=workflow%3A%22Unit+Tests%22">
-    <img alt="unit testing" src="https://img.shields.io/github/workflow/status/niklas2810/maven-template/Unit%20Testing?logo=GitHub&label=Unit%20Tests&style=for-the-badge"/></a>
+        <img alt="unit tests" src="https://img.shields.io/github/workflow/status/niklas2810/maven-template/Unit%20Tests?logo=GitHub&style=flat-square"/></a>
     <br>
     <br>   
 </div> 
