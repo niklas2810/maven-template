@@ -43,7 +43,7 @@ jobs:
           coverageLocations: target/site/jacoco/jacoco.xml:jacoco
       - name: 🗑️ Clean + Move files
         run: |
-          sudo apt-get install tidy -y
+          sudo apt-get install tidy -y > /dev/null
           find target/site/jacoco -type f -name '*.html' -exec tidy -config .github/tidy-config.txt -o "{}" "{}" \;
           rm target/site/jacoco/jacoco.csv
           rm target/site/jacoco/jacoco.xml
