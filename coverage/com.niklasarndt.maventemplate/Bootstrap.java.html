@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <meta name="generator" content=
+        "HTML Tidy for HTML5 for Linux version 5.6.0" />
+        <meta http-equiv="Content-Type" content=
+        "text/html; charset=utf-8" />
+        <link rel="stylesheet" href=
+        "../jacoco-resources/report.css" type="text/css" />
+        <link rel="shortcut icon" href=
+        "../jacoco-resources/report.gif" type="image/gif" />
+        <title>
+            Bootstrap.java
+        </title>
+        <link rel="stylesheet" href=
+        "../jacoco-resources/prettify.css" type="text/css" />
+        <script type="text/javascript" src=
+        "../jacoco-resources/prettify.js"></script>
+    </head>
+    <body onload="window['PR_TAB_WIDTH']=4;prettyPrint()">
+        <div class="breadcrumb" id="breadcrumb">
+            <span class="info"><a href="../jacoco-sessions.html"
+            class="el_session">Sessions</a></span><a href=
+            "../index.html" class="el_report">maven-template</a>
+            &gt; <a href="index.source.html" class=
+            "el_package">com.niklasarndt.maventemplate</a> &gt;
+            <span class="el_source">Bootstrap.java</span>
+        </div>
+        <h1>
+            Bootstrap.java
+        </h1>
+        <pre class="source lang-java linenums">
+        package com.niklasarndt.maventemplate;
+
+import io.sentry.Sentry;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class Bootstrap {
+
+<span class="fc" id=
+"L9">    private static final Logger logger = LoggerFactory.getLogger(Bootstrap.class);</span>
+
+<span class="fc" id=
+"L11">    public Bootstrap(String[] args) {</span>
+<span class="pc bpc" id="L12" title=
+"1 of 4 branches missed.">        if (args.length &gt; 0 &amp;&amp; args[0].equals("error")) {</span>
+<span class="fc" id=
+"L13">            throw new IllegalStateException("This excepetion is expected as the " +</span>
+                    "argument \"error\" has been provided.");
+        }
+<span class="fc" id=
+"L16">        logger.debug("Hello, World!");</span>
+<span class="fc" id="L17">    }</span>
+
+    public static void main(String[] args) {
+<span class="pc bpc" id="L20" title=
+"1 of 4 branches missed.">        if (System.getenv("SENTRY_DSN") != null || System.getProperty("sentry.dsn") != null) {</span>
+
+<span class="nc" id="L22">            Sentry.init();</span>
+<span class="nc bnc" id="L23" title=
+"All 2 branches missed.">            logger.debug("Did Sentry initialize properly? {}", Sentry.isInitialized() ? "Yes" : "No");</span>
+        } else {
+<span class="fc" id=
+"L25">            logger.info("Specify your DSN via SENTRY_DSN to enable Sentry logging. You can " +</span>
+                    "find it at https://sentry.io/settings/&lt;org&gt;/projects/&lt;project&gt;/keys.");
+        }
+
+        try {
+<span class="fc" id="L30">            new Bootstrap(args);</span>
+<span class="fc" id="L31">        } catch (Exception e) {</span>
+<span class="fc" id=
+"L32">            logger.error("Encountered uncaught exception", e);</span>
+<span class="fc" id=
+"L33">            logger.error("This fatal event will lead to an application shutdown.");</span>
+<span class="nc" id="L34">            System.exit(1);</span>
+<span class="fc" id="L35">        }</span>
+<span class="fc" id="L36">    }</span>
+
+}
+</pre>
+        <div class="footer">
+            <span class="right">Created with <a href=
+            "http://www.jacoco.org/jacoco">JaCoCo</a>
+            0.8.5.201910111838</span>
+        </div>
+    </body>
+</html>
