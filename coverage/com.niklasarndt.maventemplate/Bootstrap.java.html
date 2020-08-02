@@ -60,24 +60,26 @@ public class Bootstrap {
 "1 of 4 branches missed.">        if (System.getenv("SENTRY_DSN") != null || System.getProperty("sentry.dsn") != null) {</span>
 
 <span class="nc" id="L22">            Sentry.init();</span>
-<span class="nc bnc" id="L23" title=
-"All 2 branches missed.">            logger.debug("Did Sentry initialize properly? {}", Sentry.isInitialized() ? "Yes" : "No");</span>
+<span class="nc" id=
+"L23">            logger.debug("Did Sentry initialize properly? {}",</span>
+<span class="nc bnc" id="L24" title=
+"All 2 branches missed.">                    Sentry.isInitialized() ? "Yes" : "No");</span>
         } else {
 <span class="fc" id=
-"L25">            logger.info("Specify your DSN via SENTRY_DSN to enable Sentry logging. You can " +</span>
+"L26">            logger.info("Specify your DSN via SENTRY_DSN to enable Sentry logging. You can " +</span>
                     "find it at https://sentry.io/settings/&lt;org&gt;/projects/&lt;project&gt;/keys.");
         }
 
         try {
-<span class="fc" id="L30">            new Bootstrap(args);</span>
-<span class="fc" id="L31">        } catch (Exception e) {</span>
+<span class="fc" id="L31">            new Bootstrap(args);</span>
+<span class="fc" id="L32">        } catch (Exception e) {</span>
 <span class="fc" id=
-"L32">            logger.error("Encountered uncaught exception", e);</span>
+"L33">            logger.error("Encountered uncaught exception", e);</span>
 <span class="fc" id=
-"L33">            logger.error("This fatal event will lead to an application shutdown.");</span>
-<span class="nc" id="L34">            System.exit(1);</span>
-<span class="fc" id="L35">        }</span>
-<span class="fc" id="L36">    }</span>
+"L34">            logger.error("This fatal event will lead to an application shutdown.");</span>
+<span class="nc" id="L35">            System.exit(1);</span>
+<span class="fc" id="L36">        }</span>
+<span class="fc" id="L37">    }</span>
 
 }
 </pre>
