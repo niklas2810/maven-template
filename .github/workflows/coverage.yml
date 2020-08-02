@@ -11,6 +11,7 @@ on:
       - '**.xml'
       - '**.yml'
       - 'tidy-config.txt'
+  workflow_dispatch:
 
 jobs:
   build:
