@@ -29,7 +29,7 @@ comments:
 labels:
   'bug':
     include:
-      - '\bbug[s]?\b'
+      - '(B|b)ug([^a-zA-Z0-9]|s)'
     exclude: []
   'help wanted':
     include:
@@ -38,5 +38,7 @@ labels:
       - '\b\[test(ing)?\]\b'
   'enhancement':
     include:
-      - '\bfeat\b'
+      - '(F|f)eature'
+      - '(I|i)mprove'
+      - '(E|e)nhance'
     exclude: []
