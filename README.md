@@ -56,6 +56,9 @@ automate some of these steps.
 
 **What you need to do yourself:**
 
+🤖 marks the steps which are covered by the Maven Initializer 
+located at [/initializer.jar](initializer.jar).
+
 1. Change the package path, project name, url, etc. in `pom.xml`.
 2. [Add the project](https://codeclimate.com/github/repos/new) to Code Climate.
 3. Activate GitHub features for Code Climate under "Repo Settings > GitHub".
