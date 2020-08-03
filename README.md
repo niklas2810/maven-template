@@ -27,6 +27,17 @@ All development activity should be committed into the `development` branch. All 
 (e.g. _feature/_ and _bug/\*_) should be pulled into the `development` branch, which again can be merged
 into `main` when needed. Please keep in mind that the branch name is hardcoded in all [actions](.github/workflows)!
 
+**Setup:**
+
+- Clone this project using `git clone https://github.com/niklas2810/maven-template`.
+- Remove the git history by deleting the `.git` folder.
+- Create a new initial commit.
+- Push your project to GitHub.
+- Follow the steps described below.
+
+Sooner or later, the project [Maven Initialize](https://github.com/niklas2810/maven-initialize) will
+automate some of these steps.
+
 **Feature overview:**
 
 - Automated unit tests ([GitHub Actions](.github/workflows/testing.yml))
