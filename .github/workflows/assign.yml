@@ -1,9 +1,10 @@
 # https://github.com/srggrs/assign-one-project-github-action
-name: Assign Issues and Pull Requests
+# https://github.com/jimschubert/labeler-action
+name: Community Actions
 
 on:
   issues:
-    types: [opened]
+    types: [opened, edited, milestoned]
   pull_request:
     types: [opened]
 env:
@@ -18,3 +19,7 @@ jobs:
         uses: srggrs/assign-one-project-github-action@1.2.0
         with:
           project: 'https://github.com/niklas2810/maven-template/projects/1'
+      #- name: 🏷️ Add Labels
+      #  uses: jimschubert/labeler-action@v1
+      #  with:
+      #    GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
