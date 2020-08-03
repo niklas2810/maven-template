@@ -19,7 +19,7 @@ jobs:
         uses: srggrs/assign-one-project-github-action@1.2.0
         with:
           project: 'https://github.com/niklas2810/maven-template/projects/1'
-      - name: 🏷️ Add Labels
-        uses: jimschubert/labeler-action@v1
-        with:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      #- name: 🏷️ Add Labels
+      #  uses: jimschubert/labeler-action@v1
+      #  with:
+      #    GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
