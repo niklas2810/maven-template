@@ -53,6 +53,7 @@ automate some of these steps.
     - Test cases for all classes (~75% coverage due to Sentry edge cases) 
 - POM setup for shaded packaging
 - Packaged build information inside of the BuildInfo class 
+- Predefined Dockerfile
 
 **What you need to do yourself:**
 
@@ -70,7 +71,7 @@ This will ensure that GitHub Actions uploads your code coverage to Code Climate.
 7. (Optional) When building libraries, you might want to remove the shade plugin and add `install`
 instructions.
 8. (Optional) You might want to add automated builds on [Docker Hub](https://hub.docker.com) to 
-publish your application.
+publish your application. An example [Dockerfile](Dockerfile) is included in the repository.
 9. (Optional) Configure [Sentry](https://sentry.io).
 10. (Optional) Configure the GitHub Pages files in the [pages directory](pages) or directly in the
 gh-pages branch.
