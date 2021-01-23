@@ -29,7 +29,7 @@
         <dependency>
             <groupId>io.sentry</groupId>
             <artifactId>sentry-logback</artifactId>
-            <version>1.7.30</version>
+            <version>3.2.1</version>
         </dependency>
 
         <!-- https://junit.org/junit5/docs/current/user-guide/ -->
