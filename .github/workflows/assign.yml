@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: 🤖 Assign to project
-        uses: srggrs/assign-one-project-github-action@1.2.0
+        uses: srggrs/assign-one-project-github-action@1.2.1
         with:
           project: 'https://github.com/niklas2810/maven-template/projects/1'
       #- name: 🏷️ Add Labels
